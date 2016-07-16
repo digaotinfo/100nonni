@@ -1,0 +1,1163 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+    visibility: visible !important;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Ayesha's custom styles
+   ========================================================================== */
+@font-face {
+    font-family: 'american_typewriter';
+    src: url('fonts/americantypewriter-webfont.eot');
+    src: url('fonts/americantypewriter-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/americantypewriter-webfont.woff') format('woff'),
+         url('fonts/americantypewriter-webfont.ttf') format('truetype'),
+         url('fonts/americantypewriter-webfont.svg#american_typewriterregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'american_typewriter';
+    src: url('fonts/americantypewriter-light-webfont.eot');
+    src: url('fonts/americantypewriter-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/americantypewriter-light-webfont.woff2') format('woff2'),
+         url('fonts/americantypewriter-light-webfont.woff') format('woff'),
+         url('fonts/americantypewriter-light-webfont.ttf') format('truetype'),
+         url('fonts/americantypewriter-light-webfont.svg#american_typewriterlight') format('svg');
+    font-weight: lighter;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'american_typewriter';
+    src: url('fonts/americantypewriter-bold-webfont.eot');
+    src: url('fonts/americantypewriter-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/americantypewriter-bold-webfont.woff2') format('woff2'),
+         url('fonts/americantypewriter-bold-webfont.woff') format('woff'),
+         url('fonts/americantypewriter-bold-webfont.ttf') format('truetype'),
+         url('fonts/americantypewriter-bold-webfont.svg#american_typewriterbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+html,body{
+    height: 100%;
+}
+body{
+    background: url(../img/bg_up_01.jpg) no-repeat top center;
+    font-family: 'american_typewriter', serif;
+    color: #555;
+}
+h1 a, p a, a p, a h1, a h2, a h3, a h4, a h5, h2 a{
+    color: #555;
+}
+h1 a:hover, p a:hover, a:hover{
+    color: #555;
+}
+.image-replace{
+    display: block;
+    font-size: 0;
+    text-indent: -100%;
+}
+#main .img-box{
+    overflow: hidden;
+}
+#main .img-box img{
+    width: 100%;
+    height: auto;
+}
+header .brand{
+    background: url(../img/logo.png) no-repeat top left;
+    width: 618px;
+    /*height: 189px;*/
+    height: 204px;
+    background-size: 100%;
+    margin-left: -155px !important;
+}
+header .brand.italiano {
+    background: url(../img/logo_it.png) no-repeat top left;
+}
+a:hover{
+    text-decoration: none !important;
+}
+
+.qtrans_language_chooser{
+    list-style: none;
+    padding: 0;
+    margin-right: -15px;
+}
+.qtrans_language_chooser li{
+    float: right;
+    margin-left: 10px;
+}
+
+.lang-pt a{
+    background: url(../img/br_flag.png) no-repeat;
+}
+.lang-it a{
+    background: url(../img/ita_flag.png) no-repeat;
+}
+
+.lang-wrap{
+    padding-top: 10px;
+}
+.qtrans_language_chooser li a{
+    height: 20px;
+    width: 30px;
+    display: block;
+    background-size: 100%;
+}
+.form-wrap{
+    padding: 0;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.form-wrap label{
+    text-transform: uppercase;
+    color: #c92127;
+    font-size: 14px;
+}
+.form-wrap input{
+    border: 1px solid #d4cfcd;
+}
+.navigation{
+    margin-top: 30px;
+    text-align: right;
+    padding-right: 0;
+}
+.navigation a, .navbar-nav a{
+    /*font-size: 16px;*/
+    font-size: 15px;
+    color: #000;
+    text-decoration: none;
+    /*padding: 0 10px;*/
+    padding: 0 7px;
+    border-right: 1px solid #d4cfcd;
+}
+.navigation a:last-child{
+    border-right: none;
+    padding-right: 0;
+}
+.navigation a:hover, .navigation a.on{
+    color: #c92127;
+    font-weight: bold;
+    padding: 0px 0.3em 0 0.2em;
+    /*padding: 0 8px;*/
+}
+.navigation a.off {
+    /*padding: 0 8px;*/
+}
+.navigation a:last-child:hover{
+    padding-right: 0;
+    padding-left: 5px;
+}
+.navigation a.on:last-child{
+    padding-right: 0;
+    padding-left: 5px;
+}
+.navigation a:hover:nth-child(2), .navigation a.on:nth-child(2){
+    padding-left: 7px;
+}
+.navigation a:hover:nth-child(4), .navigation a.on:nth-child(4){
+    padding-left: 9px;
+}
+.navigation a:hover:nth-child(3), .navigation a.on:nth-child(3){
+    /*padding-left: 7px;*/
+}
+.artigos{
+    float: left;
+    width: 100%;
+    border-top: 5px solid #c1c1c1;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+.artigos article:first-child{
+    padding-left: 0;
+}
+.artigos article:last-child{
+    padding-right: 0;
+}
+.artigos article{
+    padding-right: 8px;
+    padding-left: 7px;
+}
+.artigos article .img-box{
+    width: 100%;
+    max-height: 195px;
+    overflow: hidden;
+}
+.artigos article h2{
+    font-size: 20px;
+}
+.artigos article a{
+    color: #555555;
+}
+.artigos:last-child{border-top:none}
+p{
+    font-size: 14px;
+}
+.btn-default{
+    width: 100%;
+    background: white;
+    border-radius: 0;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 1.2em;
+    color: #555;
+    padding-top: 7px;
+}
+footer{
+    background-color: #ededed;
+    height: 160px;
+}
+.push{height: 160px;}
+footer .container{
+    padding: 40px 0;
+    background: url(../img/line_gray.jpg) no-repeat center right #ededed;
+}
+footer a{
+    height: 80px;
+}
+footer .brand{
+    background: url(../img/logo_footer.png) no-repeat #ededed top center;
+    min-width: 185px;
+}
+footer .fiat{
+    background: url(../img/logo-fiat-new.png) no-repeat #ededed;
+    min-width: 82px;
+}
+footer .divider{
+    background: url(../img/footer-divider.png) no-repeat center left  #ededed;
+    display: block;
+    width: 1px !important;
+    height: 80px;
+}
+
+#main{
+    background-color: #f6f6f6;
+    padding: 40px 0;
+    min-height: 100%;
+    margin: 0 0 -160px;
+}
+.home #main{
+    background-color: transparent;
+}
+
+.page h1{
+    font-size: 42px;
+    margin-bottom: 70px;
+    font-weight: lighter;
+    color: #555555;
+}
+.page p{
+    margin-bottom: 20px;
+    font-weight: normal;
+    color: #555555;
+}
+.page p.wp-caption-text{
+    margin: 10px 0;
+    padding: 5px 0;
+}
+blockquote{
+    width: 33.33333333%;
+    float: right;
+    border-left: 0;
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 32px;
+    border-top: 5px solid #eee;
+    font-weight: lighter;
+}
+
+.flexslider.banner{
+    /*border: 3px solid #c1c1c1;*/
+    border: none;
+    box-shadow: none;
+    text-align: center;
+    background: transparent;
+}
+.title-bg{
+    background: url(../img/BG-BANNER.png) repeat-x;
+    width: 100%;
+    /*min-height: 390px;*/
+    position: absolute;
+    bottom: -10px;
+    left: 0px;
+}
+.flexslider.banner .title-bg h3{
+    font-size: 30px;
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    padding: 5px 10px;
+    color: #fff;
+    max-width: 40%;
+    text-align: left;
+}
+
+.flexslider .slides li{
+    position: relative;
+    height: auto !important;
+}
+
+article .data-wrap{
+    background: url(../img/line_gray.jpg) repeat-x 0px 5px;
+}
+article .data-wrap span{
+    background-color: #f6f6f6;
+    padding: 0 5px;
+    font-size: 16px;
+}
+
+article .share-wrap{
+    background: url(../img/line_gray_slim.png) repeat-x 0px 5px;
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+article .share-wrap .share-item{
+    background-color: #f6f6f6;
+    padding: 0 5px;
+    min-height: 22px;
+}
+article .share-wrap .fb-wrap{
+    width: 13%;
+    min-width: 148px;
+    overflow: hidden;
+}
+article .share-wrap .fb-wrap .decoy{
+    background: url(../img/Materias/like_icon.png) no-repeat;
+    width: 52px;
+    float: left;
+    height: 22px;
+}
+article .share-wrap .fb-wrap .decoy.share{
+    background: url(../img/Materias/share_icon.png) no-repeat;
+    width: 62px;
+    margin-left: 20px;
+}
+article .share-wrap .mail-it{
+    background: url(../img/email_icon.png) no-repeat;
+    width: 37px;
+    height: 22px;
+}
+article .share-wrap .email-wrap{
+    height: 29px;
+    display: inline-block;
+    position: relative;
+    float: left;
+    background-color: #f6f6f6;
+    padding: 0 11px;
+}
+article .share-wrap .gplus-wrap .decoy{
+    background: url(../img/Materias/+1_icon.png) no-repeat;
+    width: 52px;
+    float: left;
+    height: 25px;
+}
+.list-artigos article h1, .artigo article h1{
+    font-size: 40px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+.list-artigos article p, .artigo article p{
+    font-size: 18px;
+    padding-left: 8.33333333%;
+    padding-top: 20px;
+    width: 100%;
+    color: #555;
+}
+.list-artigos article, .artigo article{
+    float: left;
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+#carousel li {
+    margin-right: 5px; 
+    width: 115px;
+    border: 3px solid #f6f6f6;
+    max-height: 83px;
+}
+#carousel li img{
+    width: 100%;
+    min-height: 77px;
+}
+#carousel img {
+    display: block; 
+    opacity: .5; 
+    cursor: pointer
+}
+#carousel img:hover {
+    opacity: 1;
+}
+#carousel .flex-active-slide img {
+    opacity: 1; 
+    cursor: default;
+}
+#carousel{
+    position: relative;
+    width: 90%;
+    margin: 30px auto 10px;
+}
+#carousel .flex-direction-nav .flex-next{
+    background: url(../img/arrow_right.png) no-repeat;
+    right: -40px;
+    opacity: 1 !important;
+    font-size: 0;
+    text-indent: 100%;
+    width: 22px;
+    height: 49px;
+    margin-top: -25px;
+}
+#carousel .flex-direction-nav .flex-prev{
+    background: url(../img/arrow_left.png) no-repeat;
+    left: -40px;
+    opacity: 1 !important;
+    font-size: 0;
+    text-indent: -100%;
+    width: 22px;
+    height: 49px;
+    margin-top: -25px;
+}
+#carousel .flex-direction-nav .flex-disabled{
+    opacity: 0.6 !important;
+}
+#carousel .flex-active-slide{
+    border: 3px solid #c92127;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    overflow: hidden;
+}
+#slider{
+    position: relative;
+    width: 100%;
+    margin: 10px auto;
+    background: #343434;
+    padding: 10px 0;
+}
+#slider ul li img{
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    max-height: 400px;
+    height: auto;
+}
+
+.gallery-wrap{
+    float: left;
+    width: 100%;   
+}
+.gallery{
+    float: left;
+}
+ul.orderby li{
+    padding: 7px 0;
+}
+ul.orderby{
+    margin-bottom: 0;
+    padding-right: 0;
+}
+ul.orderby li, ul.orderby li a{
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #555;
+}
+ul.orderby li:nth-child(2) a{
+    background: url(../img/footer-divider.png) right -21px no-repeat;
+    padding: 0 8px 0 8px;
+}
+ul.orderby li:nth-child(3) a{
+    background: none;
+    padding: 0 8px 0 11px;
+}
+.orderby-wrap{
+    border-bottom: 4px solid #bc0b0a;
+    float: left;
+    width: 97.5%;
+    text-align: right;
+    margin-bottom: 40px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+ul.orderby li.on{
+    font-weight: bold;
+    background: url(../img/arrow_line_red.png) bottom center no-repeat;
+}
+ul.orderby li.on a, ul.orderby li:hover a{
+    font-weight: bold;
+    padding: 0 5px;
+}
+ul.orderby li.on:nth-child(3) a, ul.orderby li:hover:nth-child(3) a{
+    padding-left: 2px;
+}
+
+.gallery h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 14px 0 0px;
+    width: 100%;
+    float: left;
+}
+.gallery span{
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 0 0 15px;
+    width: 100%;
+    float: left;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #c2c2c2;
+}
+
+.page-template-listagem-de-galerias-php .gallery .img-box{
+    height: 187px;
+}
+
+.pagination{
+    margin-left: 15px;
+    margin-right: 15px;
+    border-top: 5px solid #c1c1c1;
+    padding-top: 20px;
+    border-radius: 0;
+    font-size: 16px;
+}
+
+.list-artigos .pagination{
+    margin-left: 0;
+}
+.pagination .prev{
+    float: left;
+    color: #555;
+}
+.pagination .next{
+    float: right;
+    color: #555;
+}
+
+.boxy{
+    margin-bottom: 15px;
+    padding-right: 0;
+    height: 160px;
+    overflow: hidden;
+}
+
+.gal-images{
+    padding-right: 0;
+}
+.gal-text h2{
+    font-weight: bold;
+    font-size: 16px;
+    color: #c92127;
+    text-transform: uppercase;
+    margin: 0;
+}
+.gal-text p{
+    font-size: 16px;
+    margin-top: 25px;
+}
+.gal-text span{
+    font-size: 14px;
+}
+h1.red-bold{
+    font-weight: bold;
+    color: #c92127;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.form-group label{
+    color: #c92127;
+    font-weight: normal;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.form-group textarea{
+    resize: none;
+    border: 1px solid #c1c1c1
+}
+.form-group input{
+    border: 1px solid #c1c1c1
+}
+.contato p{
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+.btn-red{
+    background: #c92127;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 10px 20px 4px;
+}
+.btn-red:hover{
+    color: #FFF;
+    font-weight: bold;
+    background: #c92127;
+}
+
+/** LIGHTBOX **/
+.lightboxOverlay{
+    background: #fafafa;
+    opacity: 0.9;
+}
+.lb-nav{
+    position: static;
+    width: 100%;
+    float: left;
+    margin: 20px 0;
+    border-top: 3px solid #c1c1c1;
+    padding: 13px 0;
+}
+.lb-nav a{
+    -moz-transition: none !important;
+    -webkit-transition: none !important;
+    -o-transition: color 0 ease-in !important;
+    transition: none !important;
+    opacity: 1 !important;
+    display: block!important;
+}
+.lb-closeContainer{
+    background: url(../img/line_gray_slim.png) no-repeat;
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.lb-data .lb-close{
+    background: white;
+    opacity: 1;
+    color: #555;
+    height: 3px;
+    padding: 0 5px;
+    width: auto;
+}
+.lb-data .lb-details{
+    width: 100%;
+}
+.lb-data .lb-caption{
+    color: #555;
+    font-weight: normal;
+    margin: 20px 0;
+}
+.lb-nav a.lb-prev, .lb-nav a.lb-next{
+    background: transparent;
+    width: auto;
+    color: #555;
+    font-size: 16px;
+}
+
+
+
+/** Menu mobile **/
+.navbar-brand{
+    background: url(../img/logo_footer.png) no-repeat;
+    width: 200px;
+    height: 67px;
+}
+
+.navbar-default .navbar-collapse{
+    border: none;
+}
+.navbar-default .navbar-nav li:hover a,.navbar-default .navbar-nav li.active a{
+    color: #c92127
+}
+.navbar-default.navbar-static-top{
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+#main img{
+    border-radius: 0;
+    box-shadow: none;
+    height: auto;
+}
+.gray{
+    background: #f6f6f6;
+    width: 100%;
+    float: left;
+}
+.navbar-header{
+    padding-left: 15px;
+}
+.navbar-default .navbar-nav{
+    background-image: -webkit-linear-gradient(top, #ebebeb 0%, #f3f3f3 100%);
+    background-image: -o-linear-gradient(top, #ebebeb 0%, #f3f3f3 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ebebeb), to(#f3f3f3));
+    background-image: linear-gradient(to bottom, #ebebeb 0%, #f3f3f3 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffebebeb', endColorstr='#fff3f3f3', GradientType=0);
+    background-repeat: repeat-x;
+    -webkit-box-shadow: inset 0 3px 9px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 3px 9px rgba(0, 0, 0, .075);
+}
+
+.artigos article:hover a h2{
+    color: #c92127;
+}
+.page #main .list-artigos article:hover h1 a{
+    color: #c92127;
+    /*font-weight: bold;*/
+}
+.page #main .list-artigos article:hover h1{
+    /*margin-bottom: 0px;*/
+    margin-bottom: 10px;
+}
+.pagination a:hover{
+    color: #c92127;
+    font-weight: bold;
+}
+.pagination a{
+    color: #555;
+}
+.gallery:hover h2 a{
+    color: #c92127;
+}
+.single .wp-caption img{
+    margin-bottom: 5px;
+}
+.wp-caption p.wp-caption-text {
+    padding: 5px 4px;
+}
+
+div.wpcf7-response-output {
+    float: left;
+    margin-top: -30px;
+}
+
+.search-results .pagination{
+    margin-left:0;
+}
+
+.sadface{
+    background: url(../img/sadface.png) no-repeat top center;
+    width: 100px;
+    height: 200px;
+    background-size: 100%;
+}
+.no-results{
+    text-align: center;
+}
+
+.fb-comments{
+    max-width: 100% !important;
+}
+.fb-comments, .fb-comments * {
+    width:100% !important;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (max-width: 992px) {
+    img{
+        max-width: 100%;
+    }
+    .artigos article .img-box {
+        max-height: 125px !important;
+    }
+}
+@media only screen and (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+    #main{
+        padding-top: 20px;
+    }
+    .flexslider.banner{
+        margin-bottom: 20px;
+    }
+    #carousel .flex-direction-nav .flex-next{
+        right: -25px;
+    }
+    #carousel .flex-direction-nav .flex-prev{
+        left: -25px;
+    }
+    footer .fiat {
+        min-width: 92px;
+        margin-left: -10px;
+    }
+    ul.orderby li, ul.orderby li a{
+        font-size: 10px;
+    }
+
+    .orderby-wrap{
+        margin-left: 5px;
+    }
+
+    ul.orderby li:hover a{
+        padding: 0 2px;
+    }
+    blockquote{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .artigos article, .artigos article.middle{
+        padding-left: 0;
+        padding-right: 0;
+        border-top: 5px solid #c1c1c1;
+        padding-top: 5px;
+    }
+    .artigos article .img-box{
+        height: auto;
+    }
+    .artigos {
+        border-top: none;
+    }
+    .page h1{
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    .artigo article h1{
+        font-size: 24px;
+    }
+    .list-artigos article p{
+        padding-left: 0;
+    }
+    .gallery{
+        padding-left: 5px;
+        padding-right: 2px;
+    }
+    .pagination{
+        margin-left: 3px
+    }
+    .home .flexslider.banner{
+        margin-bottom: 40px;
+    }
+    .alignright {
+        float: none;
+        margin: 0;
+    }
+    .gal-images {
+        padding-left: 0;
+    }
+    .flexslider.banner .title-bg h3 {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 20px;
+        position: static;
+        color: #555;
+        max-width: 100%;
+    }
+
+    .title-bg{
+        background: none;
+        width: 100%;
+        min-height: 100%;
+        position: static;
+        bottom: 0;
+        left: 0px;
+    }
+
+    #carousel{
+        margin: 30px 20px 10px;
+        width: 72%;
+    }
+    #slider {
+        width: 86%;
+        margin: 10px;
+    }
+    .flex-direction-nav a{
+        top: 30%;
+    }
+    
+}
+@media only screen and (max-width: 1200px) {
+    .col-md-6.block-wrap {
+        width: 58.33333333%;
+        margin-top: -185px;
+    }
+    .artigos article .img-box {
+        max-height: 165px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar-nav{
+        margin: 7.5px -15px;
+    }
+    .navbar-default .navbar-nav{
+        background: transparent;
+        box-shadow: none;
+    }
+}
+
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

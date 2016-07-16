@@ -1,0 +1,48 @@
+<?php
+add_theme_support( 'post-thumbnails' ); 
+
+function codex_custom_init() {
+    $args = array(
+		'public' => true,
+		'label'  => 'Banners',
+		'menu_position' => 5,
+		'supports' => array('title', 'thumbnail')
+    );
+    register_post_type( 'banner', $args );
+
+    $args = array(
+		'public' => true,
+		'label'  => 'Galeria',
+		'menu_position' => 5,
+		'supports' => array('title', 'thumbnail', 'excerpt')
+    );
+    register_post_type( 'galeria', $args );
+}
+add_action( 'init', 'codex_custom_init' );
+
+function custom_excerpt_length( $length ) {
+	return 20;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+function new_excerpt_more( $more ) {
+	return '...';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
+function is_page_on($id){
+	if($id == 'home'){
+		$is = (is_home())? 'on active':'off';
+	}else{
+		if(is_page($id)){
+			$is = "on active";
+		}else{
+			$is = "off";
+		}
+	}
+	
+
+	echo $is;
+}
+
+add_image_size( 'home-articles', 365, 195, array( 'center', 'center' ) );
