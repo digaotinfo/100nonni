@@ -39,33 +39,39 @@
 	                    		}
 	                    		//echo $url;
 	                    		?>
-		                        <li><a href="<?php echo $url;?>" target="<?php echo $target;?>">
-		                        	<?php
-		                        		/*
-		                        		*	caso o idioma for em italiano,
-		                        		*  	sera usado o campo adicionado no admin ['imagem_em_italiano']
-		                        		*	se este campo estiver vazio, sera utilizado a imagem destacada
-		                        		*
-		                        		*/
-		                        		$img = '';
-		                        		if(qtrans_getLanguage() == 'it'):
-			                        		if(get_field('imagem_em_italiano')){
-				                        		$getImg = get_field('imagem_em_italiano');
-				                        		$img = $getImg['url'];
-				                        	}else{
-				                        		$img = $hover_url[0];
-				                        	}
-				                        else:
-				                        	$img = $hover_url[0];
-				                        endif;
-
-		                        	?>
-		                        	<img src="<?php echo $img?>" alt="<?php the_title();?>">
-		                        	<div class="title-bg"><h3><?php
-		                        	the_title();
-
-		                        	?></h3></div>
-		                        </a></li>
+		                        <li>
+		                        	<a href="<?php echo $url;?>" target="<?php echo $target;?>">
+			                        	<?php
+			                        		/*
+			                        		*	caso o idioma for em italiano,
+			                        		*  	sera usado o campo adicionado no admin ['imagem_em_italiano']
+			                        		*	se este campo estiver vazio, sera utilizado a imagem destacada
+			                        		*
+			                        		*/
+			                        		$img = '';
+			                        		if(qtrans_getLanguage() == 'it'):
+				                        		if(get_field('imagem_em_italiano')){
+					                        		$getImg = get_field('imagem_em_italiano');
+					                        		$img = $getImg['url'];
+					                        	}else{
+					                        		$img = $hover_url[0];
+					                        	}
+					                        else:
+					                        	$img = $hover_url[0];
+					                        endif;
+	
+			                        	?>
+			                        	<img src="<?php echo $img?>" alt="<?php the_title();?>">
+			                        	<div class="title-bg">
+			                        		<h3>
+					                        	<?php
+				                        			the_title();
+		
+				                        		?>
+				                        	</h3>
+				                       </div>
+		                        	</a>
+		                        </li>
 		                    <?php endwhile;?>
 	                    </ul>
 	                </div>

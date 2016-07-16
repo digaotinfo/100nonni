@@ -102,7 +102,7 @@
                 <a href="<?php bloginfo('url');?>" id="" class="image-replace brand <?=$logo_lang?> col-md-6  hidden-xs hidden-sm">100Nonni</a>
 
                 <div class="col-md-6 pull-right row  hidden-xs hidden-sm block-wrap">
-                    <div class="col-md-3 col-md-offset-9 col-xs-12 pull-right lang-wrap">
+                    <div class="col-md-4 col-md-offset-9 col-xs-12 pull-right lang-wrap idiomas">
                         <?php echo qtrans_generateLanguageSelectCode('image'); ?>
                     </div>
 

@@ -23,13 +23,16 @@ define('WP_CACHE', true); // Added by W3 Total Cache
 define('DB_NAME', '100nonni');
 
 /** Usuário do banco de dados MySQL */
-define('DB_USER', '100nonni');
+// define('DB_USER', '100nonni');
+define('DB_USER', 'root');
 
 /** Senha do banco de dados MySQL */
-define('DB_PASSWORD', 'b6j9n4j2');
+// define('DB_PASSWORD', 'b6j9n4j2');
+define('DB_PASSWORD', 'mysql');
 
 /** nome do host do MySQL */
-define('DB_HOST', 'mysql.100nonni.com');
+// define('DB_HOST', 'mysql.100nonni.com');
+define('DB_HOST', 'localhost');
 
 /** Conjunto de caracteres do banco de dados a ser usado na criação das tabelas. */
 define('DB_CHARSET', 'utf8');
